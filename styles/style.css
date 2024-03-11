@@ -3,11 +3,11 @@
 }
 
 .start-button {
-    width: 200px;
+    width: 250px;
     height: 75px;
     background-color: white;
     border-radius: 15px;
-
+    
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 30px;
     color: #333333;
