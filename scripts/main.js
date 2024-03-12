@@ -16,3 +16,12 @@ window.onload = function () {
             description.style.visibility = 'visible';
         });
 };
+
+window.onload = function () {
+    document
+        .querySelector(".btn-close-description")
+        .addEventListener("click", function () {
+            var button = document.querySelector('.description-window');
+            button.style.visibility = 'hidden';
+        });
+};

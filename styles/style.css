@@ -86,3 +86,8 @@
 .game-card {
     width: 230px;
 }
+
+.btn-close-description {
+    justify-self: end;
+    margin-left: auto;
+}
