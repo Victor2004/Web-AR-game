@@ -16,8 +16,11 @@
     <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false'
         renderer='antialias: true; alpha: true'>
         <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
-        <a-entity id="your-coordinates" material='color: red' geometry='primitive: box'
-            gps-new-entity-place="latitude: <your-lat>; longitude: <your-loon>" scale="10 10 10"></a-entity>
+        <a-box id="your-coordinates" material="color: blue"
+            gps-entity-place="latitude: <your-lat>; longitude: <your-loon>" position="0 165 0" scale="3.5 3.5 3.5"
+            rotation="0 180 0"> </a-box>
+        <!-- <a-entity id="your-coordinates" material='color: red' geometry='primitive: box'
+            gps-new-entity-place="latitude: <your-lat>; longitude: <your-loon>" scale="10 10 10"></a-entity> -->
     </a-scene>
 </body>
 
