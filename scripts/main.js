@@ -26,34 +26,8 @@ function buttonCloseDescription() {
     });
 }
 
-// Функция для получения текущих координат
-function getCurrentLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-        console.log("Геолокация не поддерживается вашим браузером.");
-    }
-}
-
-// Функция для отображения координат
-function showPosition(position) {
-    var latitude = position.coords.latitude;
-    var longitude = position.coords.longitude;
-
-    // Вывод координат
-    console.log("Ваши текущие координаты:");
-    console.log("Широта:", latitude);
-    console.log("Долгота:", longitude);
-    // alert("Широта: " + latitude + " Долгота: " + longitude);
-
-    // Замена координат в коде
-    var code = document.getElementById("your-coordinates");
-    code.innerHTML = code.innerHTML.replace("<your-lat>", latitude).replace("<your-loon>", longitude);
-}
-
 window.onload = function () {
     descriptionButton();
     buttonCloseDescription();
 
 };
-getCurrentLocation();
