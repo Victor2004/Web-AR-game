@@ -44,7 +44,7 @@ function showPosition(position) {
     console.log("Ваши текущие координаты:");
     console.log("Широта:", latitude);
     console.log("Долгота:", longitude);
-    alert("Широта: " + latitude + " Долгота: " + longitude);
+    // alert("Широта: " + latitude + " Долгота: " + longitude);
 
     // Замена координат в коде
     var code = document.getElementById("your-coordinates");
