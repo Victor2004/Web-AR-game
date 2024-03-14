@@ -9,13 +9,9 @@ AFRAME.registerComponent('markerhandler', {
 });
 
 function descriptionButton() {
-    var description = document.querySelector('.description-window');
     document.querySelector(".description-button").addEventListener("click", function () {
-        if (description.style.visibility == 'hidden') {
-            description.style.visibility = 'visible';
-        } else {
-            description.style.visibility = 'hidden';
-        }
+        var description = document.querySelector('.description-window');
+        description.style.visibility = 'visible';
     });
 }
 
